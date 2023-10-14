@@ -43,6 +43,7 @@ Partial Class FormPrincipal
         PictureInicio = New PictureBox()
         TimerOcultar = New Timer(components)
         TimerMostrar = New Timer(components)
+        Button1 = New Button()
         PanelBarraTitulo.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         PanelMenu.SuspendLayout()
@@ -241,6 +242,7 @@ Partial Class FormPrincipal
         ' 
         PanelContenedor.BackColor = Color.White
         PanelContenedor.BackgroundImageLayout = ImageLayout.Center
+        PanelContenedor.Controls.Add(Button1)
         PanelContenedor.Controls.Add(Label1)
         PanelContenedor.Controls.Add(PictureInicio)
         PanelContenedor.Dock = DockStyle.Fill
@@ -274,6 +276,15 @@ Partial Class FormPrincipal
         ' 
         ' TimerMostrar
         ' 
+        ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(741, 127)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(94, 29)
+        Button1.TabIndex = 2
+        Button1.Text = "Button1"
+        Button1.UseVisualStyleBackColor = True
         ' 
         ' FormPrincipal
         ' 
@@ -319,4 +330,5 @@ Partial Class FormPrincipal
     Friend WithEvents BtnUsuarios As Button
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents BtnCalendario As Button
+    Friend WithEvents Button1 As Button
 End Class
